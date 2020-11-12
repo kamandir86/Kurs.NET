@@ -11,7 +11,11 @@ namespace W2L7
 
             if (a == b)
             {
-                Console.WriteLine("5 i 5 są równe");
+                Console.WriteLine($"{a} i {b} są równe");
+            }
+            else
+            {
+                Console.WriteLine($"{a} i {b} nie są równe");
             }
 
             Console.ReadKey();
@@ -28,7 +32,7 @@ namespace W2L7
 
             int d = 14;
 
-            if (d > 0)
+            if (d >= 0)
             {
                 Console.WriteLine($"{d} jest liczbą dodatnią");
             }
@@ -89,7 +93,7 @@ namespace W2L7
             int one = 25;
             int two = 63;
             int three = 79;
-            
+
             if (one > two && one > three)
             {
                 Console.WriteLine($"{one} jest najwiekszą z podanych");
@@ -166,6 +170,173 @@ namespace W2L7
             {
                 Console.WriteLine("Niepoprawna temperatura. Zrestartuj program");
             }
+
+            Console.ReadKey();
+
+            int insertSideA = 40;
+            int insertSideB = 55;
+            int insertSideC = 65;
+            /*
+            int longestSide;
+            int triangleSideA;
+            int triangleSideB;
+
+            if (insertSideA > insertSideB && insertSideA > insertSideC)
+            {
+                longestSide = insertSideA;
+            }
+            else if (insertSideB > insertSideA && insertSideB > insertSideC)
+            {
+                longestSide = insertSideB;
+            }
+            else if (insertSideC > insertSideA && insertSideC > insertSideB)
+            {
+                longestSide = insertSideC;
+            }
+
+            if (insertSideA > insertSideB && insertSideA > insertSideC)
+            {
+                triangleSideA = insertSideA;
+            }
+            else if (insertSideB > insertSideA && insertSideB > insertSideC)
+            {
+                triangleSideA = insertSideB;
+            }
+            else if (insertSideC > insertSideA && insertSideC > insertSideB)
+            {
+                triangleSideA = insertSideC;
+            }
+
+            if (insertSideA > insertSideB && insertSideA > insertSideC)
+            {
+                triangleSideB = insertSideA;
+            }
+            else if (insertSideB > insertSideA && insertSideB > insertSideC)
+            {
+                triangleSideB = insertSideB;
+            }
+            else if (insertSideC > insertSideA && insertSideC > insertSideB)
+            {
+                triangleSideB = insertSideC;
+            }*/
+
+            if (insertSideC < insertSideA + insertSideB)
+            {
+                Console.WriteLine("Można zbudować trójkąt");
+            }
+            else
+            {
+                Console.WriteLine("Nie można zbudować trójkąta");
+            }
+
+            Console.ReadKey();
+
+            int userGrade = 3;
+
+            if (userGrade == 6)
+            {
+                Console.WriteLine("Celujący");
+            }
+            else if (userGrade == 5)
+            {
+                Console.WriteLine("Bardzo dobry");
+            }
+            else if (userGrade == 4)
+            {
+                Console.WriteLine("Dobry");
+            }
+            else if (userGrade == 3)
+            {
+                Console.WriteLine("Dostateczny");
+            }
+            else if (userGrade == 2)
+            {
+                Console.WriteLine("Dopuszczający");
+            }
+            else
+            {
+                Console.WriteLine("Niedostateczny");
+            }
+
+            Console.ReadKey();
+
+            int dayOfTheWeek = 4;
+
+            if (dayOfTheWeek == 7)
+            {
+                Console.WriteLine("Niedziela");
+            }
+            else if (dayOfTheWeek == 6)
+            {
+                Console.WriteLine("Sobota");
+            }
+            else if (dayOfTheWeek == 5)
+            {
+                Console.WriteLine("Piątek");
+            }
+            else if (dayOfTheWeek == 4)
+            {
+                Console.WriteLine("Czwartek");
+            }
+            else if (dayOfTheWeek == 3)
+            {
+                Console.WriteLine("Środa");
+            }
+            else if (dayOfTheWeek == 2)
+            {
+                Console.WriteLine("Wtorek");
+            }
+            else if (dayOfTheWeek == 1)
+            {
+                Console.WriteLine("Poniedziałek");
+            }
+
+            Console.ReadKey();
+
+            Console.WriteLine("Podaj pierwszą liczbę");
+            string userFirstDigit = Console.ReadLine();
+            int firstInt = int.Parse(userFirstDigit);
+
+            Console.WriteLine("Podaj drugą liczbę");
+            string userSecondDigit = Console.ReadLine();
+            int secondInt = int.Parse(userSecondDigit);
+
+            Console.WriteLine("Podaj operację do wykonania:");
+            Console.WriteLine("1. Dodawanie");
+            Console.WriteLine("2. Odejmowanie");
+            Console.WriteLine("3. Mnożenie");
+            Console.WriteLine("4. Dzielenie");
+            string userOperation = Console.ReadLine();
+            int intOperation = int.Parse(userOperation);
+            int calcResult;
+
+            if (intOperation == 1)
+            {
+                calcResult = firstInt + secondInt;
+                Console.WriteLine($"Twój wynik to: {calcResult}");
+            }
+            else if (intOperation == 2)
+            {
+                calcResult = firstInt - secondInt;
+                Console.WriteLine($"Twój wynik to: {calcResult}");
+            }
+            else if (intOperation == 3)
+            {
+                calcResult = firstInt * secondInt;
+                Console.WriteLine($"Twój wynik to: {calcResult}");
+            }
+            else if (intOperation == 4)
+            {
+                calcResult = firstInt / secondInt;
+                Console.WriteLine($"Twój wynik to: {calcResult}");
+            }
+            else
+            {
+                Console.WriteLine("Nie wybrano poprawnej operacji. Zrestartuj program.");
+            }
+
+            Console.ReadKey();
+            
 
         }
     }

@@ -233,63 +233,116 @@ namespace W2L7
 
             int userGrade = 3;
 
-            if (userGrade == 6)
+            switch (userGrade)
             {
-                Console.WriteLine("Celujący");
+                case 1:
+                    Console.WriteLine("Niedostateczny");
+                    break;
+                case 2:
+                    Console.WriteLine("Dopuszczający");
+                    break;
+                case 3:
+                    Console.WriteLine("Dostateczny");
+                    break;
+                case 4:
+                    Console.WriteLine("Dobry");
+                    break;
+                case 5:
+                    Console.WriteLine("Bardzo dobry");
+                    break;
+                case 6:
+                    Console.WriteLine("Celujący");
+                    break;
+                default:
+                    Console.WriteLine("Niepoprawna ocena");
+                    break;
             }
-            else if (userGrade == 5)
-            {
-                Console.WriteLine("Bardzo dobry");
-            }
-            else if (userGrade == 4)
-            {
-                Console.WriteLine("Dobry");
-            }
-            else if (userGrade == 3)
-            {
-                Console.WriteLine("Dostateczny");
-            }
-            else if (userGrade == 2)
-            {
-                Console.WriteLine("Dopuszczający");
-            }
-            else
-            {
-                Console.WriteLine("Niedostateczny");
-            }
+
+            //if (userGrade == 6)
+            //{
+            //    Console.WriteLine("Celujący");
+            //}
+            //else if (userGrade == 5)
+            //{
+            //    Console.WriteLine("Bardzo dobry");
+            //}
+            //else if (userGrade == 4)
+            //{
+            //    Console.WriteLine("Dobry");
+            //}
+            //else if (userGrade == 3)
+            //{
+            //    Console.WriteLine("Dostateczny");
+            //}
+            //else if (userGrade == 2)
+            //{
+            //    Console.WriteLine("Dopuszczający");
+            //}
+            //else
+            //{
+            //    Console.WriteLine("Niedostateczny");
+            //}
 
             Console.ReadKey();
 
             int dayOfTheWeek = 4;
 
-            if (dayOfTheWeek == 7)
+            switch (dayOfTheWeek)
             {
-                Console.WriteLine("Niedziela");
+                case 1:
+                    Console.WriteLine("Poniedziałek");
+                    break;
+                case 2:
+                    Console.WriteLine("Wtorek");
+                    break;
+                case 3:
+                    Console.WriteLine("Środa");
+                    break;
+                case 4:
+                    Console.WriteLine("Czwartek");
+                    break;
+                case 5:
+                    Console.WriteLine("Piątek");
+                    break;
+                case 6:
+                    Console.WriteLine("Sobota");
+                    break;
+                case 7:
+                    Console.WriteLine("Niedziela");
+                    break;
+                default:
+                    Console.WriteLine("Niepoprawny numer dnia tygodnia.");
+                    break;                
             }
-            else if (dayOfTheWeek == 6)
-            {
-                Console.WriteLine("Sobota");
-            }
-            else if (dayOfTheWeek == 5)
-            {
-                Console.WriteLine("Piątek");
-            }
-            else if (dayOfTheWeek == 4)
-            {
-                Console.WriteLine("Czwartek");
-            }
-            else if (dayOfTheWeek == 3)
-            {
-                Console.WriteLine("Środa");
-            }
-            else if (dayOfTheWeek == 2)
-            {
-                Console.WriteLine("Wtorek");
-            }
-            else if (dayOfTheWeek == 1)
-            {
-                Console.WriteLine("Poniedziałek");
-            }
+
+            //if (dayOfTheWeek == 7)
+            //{
+            //    Console.WriteLine("Niedziela");
+            //}
+            //else if (dayOfTheWeek == 6)
+            //{
+            //    Console.WriteLine("Sobota");
+            //}
+            //else if (dayOfTheWeek == 5)
+            //{
+            //    Console.WriteLine("Piątek");
+            //}
+            //else if (dayOfTheWeek == 4)
+            //{
+            //    Console.WriteLine("Czwartek");
+            //}
+            //else if (dayOfTheWeek == 3)
+            //{
+            //    Console.WriteLine("Środa");
+            //}
+            //else if (dayOfTheWeek == 2)
+            //{
+            //    Console.WriteLine("Wtorek");
+            //}
+            //else if (dayOfTheWeek == 1)
+            //{
+            //    Console.WriteLine("Poniedziałek");
+            //}
 
             Console.ReadKey();
 
